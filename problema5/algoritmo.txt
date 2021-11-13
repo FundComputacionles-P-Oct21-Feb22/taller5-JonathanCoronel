@@ -1,0 +1,23 @@
+//Se debe generar un algoritmo y miniespecificación que permita calcular y mostrar el valor total a pagar mensual de servicios 
+//básicos de una persona. Los servicios básicos son: agua, telefono. Si la persona es menor a 20 años se descuenta el 20% del 
+//total mensual. Para calcular el costo mensual a pagar el agua, se debe ingresar el número de litros de agua consumidos en 
+//el mes y el costo de cada litro de agua. Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados 
+//en el mes y el costo de cada minuto.
+
+ALgoritmo
+
+1.Inicio
+2.Se ingresa el el número de litros de agua consumidos en el mes.
+3.Se ingresa el costo de cada litro de agua.
+4.Se ingresa el número de minutos gastados de telefono en el mes.
+5.Se ingresa el costo de minuto del telefono.
+6.Se ingresa la edad de la persona.
+7.Se calcula el valor total del costo del agua y luz multiplicando lo consumido 
+en el mes con su respectivo precio.
+8.Luego se calcula el valor total de lo consumido en el mes sumando los valores totales
+consumidos de agua y telefono.
+9.Si la persona tiene una edad menor a 20 años se le aplica un descuento del 20% al valor 
+total de lo consumido de agua y telefono, si no se cumple esta condicion simplememte se presenta 
+el valor completo a pagar.
+10.Se presenta el valor total a cancelar de los servicios básicos.
+11.Fin

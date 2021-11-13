@@ -1,0 +1,51 @@
+//Se debe generar un algoritmo y miniespecificación que permita calcular y mostrar el valor total a pagar mensual de servicios 
+//básicos de una persona. Los servicios básicos son: agua, telefono. Si la persona es menor a 20 años se descuenta el 20% del 
+//total mensual. Para calcular el costo mensual a pagar el agua, se debe ingresar el número de litros de agua consumidos en 
+//el mes y el costo de cada litro de agua. Para calcular el costo del teléfono, se debe ingresar el número de minutos gastados 
+//en el mes y el costo de cada minuto.
+
+1.  Inicio
+
+2.  litros_consumidos, d[0,n]
+3.  costo_litro, d[0,n]
+4.  total_litros, d[0,n]
+5.  minutos_gastados, d[0,n]
+6.  costo_minuto, d[0,n]
+7   total_minutos, d[0,n]
+8.  valorTotal, d[0,n]
+9.  edad, i[0,n]
+10.  descuento, d[0,n]
+11.  porcentaje, d[0,n]
+
+12.  porcentaje <-- 20
+
+13.  Escribir "Ingrese el número de litros de agua consumidos en el mes "
+14.  Lea litros_consumidos
+
+15.  Escribir "Ingrese el costo de cada litro de agua"
+16.  Lea costo_litro
+
+17.  Escribir "Ingrese el número de minutos gastados en el mes"
+18.  Lea minutos_gastados
+
+19.  Escribir "Ingrese el costo del minuto de Teléfono  "
+20.  Lea costo_minuto
+
+21.  Escribir "Ingrese edad de la persona"
+22.  Lea edad 
+
+23. total_litros <-- litros_consumidos * costo_litro
+24. total_minutos <-- minutos_gastados * costo_minuto
+
+25.  valorTotal <-- total_litros + total_minutos
+
+26.  Si edad < 20 entonces
+ 	vt ---- 100%
+	 x ---- 20%
+27.   	descuento <-- (porcentaje * valorTotal)/100
+28.   	valorTotal <-- valorTotal - descuento 
+29.  Fin si
+
+26. Escribir "El valor total a pagar de los servicios es: " + valorTotal
+
+27. Fin

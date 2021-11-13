@@ -1,0 +1,71 @@
+Problema 4
+//En una hosteria de la ciudad de Loja se hace un descuento del 10% si el cliente se hospeda más de 5 días, del 15% si
+//se hospeda más de 10 días y del 20% si se hospeda más de 15 días. Elaborar un solución que pida como datos de 
+//entrada el número de días y el precio diario de la habitación y luego calcule e imprima el subtotal por pagar, el descuento 
+//y el total por pagar.
+
+1. Inicio
+2. dias_hospedaje, i[0, n] 
+3. precio_habitacion,  d[0,n]
+4. subTotal, d[0,n]
+5. valorTotal, d[0,n] <-- 0
+6. descuento1, d[0,n]
+7. descuento2, d[0,n]
+8. descuento3, d[0,n]
+9. porcentaje, d[0,n] 
+
+10. Escribir "Ingrese los dias de hospedaje"
+11. Leer dias_hospedaje
+12. Escribir "Ingrese precio diario de la habitación"
+13. Leer precio_habitacion
+14. subTotal <-- dias_hospedaje * precio_habitacion
+15.Si dias_hospedaje < 0 entonces
+16. 	subTottal <-- 0 
+17. 	valorTotal <-- 0 
+18. De lo contrario
+19.Si dias_hospedaje <= 5 AND dias_hospedaje => 0  entonces
+20. 	valorTotal = subTotal
+21.De lo contrario
+22. Si dias_hospedaje > 5  AND dias_hospedaje <= 10 entonces 
+23. porcentaje <-- 10
+            // vt  ----  100%
+            // x   ----  10%
+24.	descuento <-- (subTotal * porcentaje) / 100
+25.	valorTotal <-- subTotal - descuento   // vt <-- 100 - 10 = 90
+26.De lo contraio
+27.Si Si dias_hospedaje > 10 AND dias_hospedaje <= 15 entonces 
+28.porcentaje <-- 15
+            // vt  ----  100%
+            // x   ----  15%
+29.	descuento <-- (subTotal * porcentaje) / 100 
+30.	valorTotal <-- subTotal - descuento   // vt <-- 100 - 15 = 85
+31.De lo contrario 
+32. porcentaje <-- 20
+            // vt  ----  100%
+            // x   ----  20%
+33.	descuento <-- (subTotal * porcentaje) / 100 
+34.	valorTotal <-- subTotal - descuento   // vt <-- 100 - 20 = 80
+35:Fin Si 
+36.Fin Si
+37.Fin Si
+38.Fin Si   
+39.Escribir "El SubTotal a pagar es de:" + subTotal
+40.Escribir "El descuento aplicado  es de:" + descuento
+41.Escribir "El valor Total a pagar es de:" + valorTotal 
+42.Fin
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
